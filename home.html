@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>My first project</title>
+	 <link rel="stylesheet" href="style.css">
+	 <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+	 <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">TeamProject</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Accueil</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Domaines <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="ing.html">Ingénierie</a></li>
+              <li><a href="#">Politique</a></li>
+              <li><a href="#">Commerce</a></li>
+              <li><a href="#">Droit</a></li>
+              <li><a href="#">Philosophie</a></li>
+              <li><a href="#">Santé</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Perdu?</a></li>
+          <li><a href="#">Contacez-nous</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="front" id=""> 
+      <h1 class="subtitle">
+        Que faire <br> après le bac ?
+  	  </h1>
+      <nav>
+      <a href="#target"> <button class="Button1">Cliquez Ici !</button><br></a>
+      <p class="Button2">Perdu?</p>
+      <br />
+	  </div>
+
+    <div class="portfolio" id="target">
+	    <h3>Domaines</h3>
+      <div class="images1">
+	     <a href="ing.html"><img id="first" src="./img/second.jpg"></img></a>
+	     <img  id="second" src="./img/droit.jpg"/>
+	     <img  id="third" src="./img/philosophie.jpg"/></div>
+		  <div class="images1">
+	     <img id="first"  src="./img/commerce.jpg"></img>
+	     <img  id="second" src="./img/santé.jpg"/>
+	     <img  id="third" src="./img/politique.jpg"/></div>
+	    </div>
+      <h3 id="textt">Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="Morocco">Morocco</option>
+      <option value="France">France</option>
+      <option value="USA">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  </body>
+</html>
