@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<h2>Image Overlay Title</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/national-university-of-ireland-galway-aula-maxima-quadrangle.jpg?itok=N7xXLaU8" alt="Avatar" class="image">
+  <div class="overlay">A university (Latin: universitas, "a whole") is an institution of higher (or tertiary) education and research which awards academic degrees in various academic disciplines. Universities typically provide undergraduate education and postgraduate education.</div>
+</div>
+
+</body>
+</html>
